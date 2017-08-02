@@ -1,0 +1,60 @@
+.nav-main
+  width: 100%
+  height: 60px
+  background-color: #fff
+
+.logo
+  color: #999
+  font-size: 32px
+  font-weight: 300
+  line-height: 57px
+  float: left
+  padding: 0 20px
+  span
+    color: rgba(255, 90, 0, 1)
+
+.nav-main-list,
+.nav-main-list-dropdown
+  float: left
+  list-style: none
+  position: relative
+
+.nav-main-list-text,
+.nav-main-list-dropdown-text
+  display: block
+  padding: 21px 14px
+  font-size: 16px
+  color: #000
+  text-decoration: none
+  text-transform: uppercase
+  letter-spacing: 1px
+
+.fa-angle-down
+  color: rgba(255, 90, 0, 1)
+
+/*
+ DROPDOWN MENU STARTS HERE
+ ============================== */
+
+.nav-main-ulist-dropdown
+  display: none
+  position: absolute
+  top: 60px
+  background-color: rgba(255, 90, 0, 1)
+
+.nav-main-list:hover .nav-main-ulist-dropdown
+  display: flex
+  flex-direction: row
+
+.nav-main-list-dropdown
+  flex: 1 1 200px
+  min-width: 200px
+  border-radius: 0 0 4px 4px
+
+.nav-main-list-dropdown-text
+  padding: 12px 24px
+  font-size: 14px
+  color: #fff
+  transition: all 200ms ease-in-out
+  &:hover
+    background-color: rgba(255, 255, 255, 0.25)
